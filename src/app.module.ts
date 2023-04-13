@@ -9,7 +9,7 @@ import { RecipeService } from './recipe/recipe.service';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/nest'),
+    MongooseModule.forRoot('mongodb://localhost:27017/test'),
     RecipeModule,
     UserModule,
   ],

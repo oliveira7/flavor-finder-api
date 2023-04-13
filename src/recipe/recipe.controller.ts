@@ -1,4 +1,9 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Get, Post } from '@nestjs/common';
 
 @Controller('recipe')
-export class RecipeController {}
+export class RecipeController {
+  @Post()
+  createRecipe(): string {
+    return 'Hello World!';
+  }
+}
