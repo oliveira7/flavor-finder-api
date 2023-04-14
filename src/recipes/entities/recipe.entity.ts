@@ -5,5 +5,5 @@ export class Recipe {
   ingredients: string[];
   steps: string[];
   servings: number;
-  prepTime: number;
+  prepTimeInMin: number;
 }

@@ -6,5 +6,5 @@ export const RecipeSchema = new mongoose.Schema({
   ingredients: [String],
   steps: [String],
   servings: Number,
-  prepTime: Number,
+  prepTimeInMin: Number,
 });

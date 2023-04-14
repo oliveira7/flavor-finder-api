@@ -6,5 +6,5 @@ export interface Recipe extends Document {
   readonly ingredients: string[];
   readonly steps: string[];
   readonly servings: number;
-  readonly prepTime: number;
+  readonly prepTimeInMin: number;
 }
