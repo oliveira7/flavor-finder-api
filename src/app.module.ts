@@ -1,19 +1,7 @@
 import { Module } from '@nestjs/common';
-import { MongooseModule } from '@nestjs/mongoose';
-import { UserController } from './user/user.controller';
-import { RecipeController } from './recipe/recipe.controller';
-import { RecipeModule } from './recipe/recipe.module';
-import { UserModule } from './user/user.module';
-import { UserService } from './user/user.service';
-import { RecipeService } from './recipe/recipe.service';
+import { RecipesModule } from './recipes/recipes.module';
 
 @Module({
-  imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/test'),
-    RecipeModule,
-    UserModule,
-  ],
-  controllers: [UserController, RecipeController],
-  providers: [UserService, RecipeService],
+  imports: [RecipesModule],
 })
 export class AppModule {}
