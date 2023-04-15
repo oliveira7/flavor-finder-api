@@ -11,7 +11,7 @@ import { ConfigModule } from '@nestjs/config';
     UsersModule,
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: [`.env.${process.env.STAGE}`],
+      envFilePath: ['.env'],
     }),
   ],
   providers: [],

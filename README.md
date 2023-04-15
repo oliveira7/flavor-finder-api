@@ -1,5 +1,5 @@
 
-## Projeto
+## Project
 Pequena API para listagem de receitas.
 
 ### Techs
